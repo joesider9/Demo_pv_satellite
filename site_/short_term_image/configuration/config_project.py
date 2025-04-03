@@ -21,12 +21,12 @@ Date: September 2022
 """
 import numpy as np
 import pandas as pd
-from Ptolemaida.short_term_image.configuration.config_utils import *
+from site_.short_term_image.configuration.config_utils import *
 
 DOCKER = False
 if not ('smartrue' in os.getcwd() or 'PycharmProjects' in os.getcwd()):
     DOCKER = True
-PROJECT_NAME = 'Ptolemaida'
+PROJECT_NAME = 'site_'
 PROJECT_GROUP = 'PPC_sat'
 PROJECT_OWNER = 'PPC'
 
@@ -49,7 +49,7 @@ RATED_POWER = 200
 TYPE = 'pv'
 
 
-FILE_NAME = f"{find_pycharm_path()}/Ptolemaida/data/pv_ts_15min.csv"
+FILE_NAME = f"{find_pycharm_path()}/site_/data/pv_ts_15min.csv"
 EVALUATION_START_DATE = ['2024-03-01 00:00:00', '2024-04-10 00:00:00']  # '%Y-%m-%d %H:%M or None
 LOCAL_TIME_ZONE = 'CET'  # 'Europe/Athens', 'UTC', 'CET'
 SITE_TIME_ZONE = 'Europe/Athens'  # 'Europe/Athens', 'UTC', 'CET'

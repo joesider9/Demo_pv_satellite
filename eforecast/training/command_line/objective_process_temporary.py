@@ -60,7 +60,7 @@ except:
 trial_number = 0
 method = 'LSTM'
 cluster_name = 'global'
-path_cluster =  ('/media/smartrue/HHD1/George/models/PPC/PPC_sat_ver2/pv/Ptolemaida/multi-output/model_ver0/global')
+path_cluster =  ('/media/smartrue/HHD1/George/models/PPC/PPC_sat_ver2/pv/site_/multi-output/model_ver0/global')
 gpu_id = 0
 refit = bool(0)
 #

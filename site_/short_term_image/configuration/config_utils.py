@@ -1,5 +1,5 @@
 """
-Functions for Ptolemaida.short_term_image.configuration files
+Functions for site_.short_term_image.configuration files
 
 AUTHOR: G.SIDERATOS
 

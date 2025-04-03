@@ -14,7 +14,7 @@ from eforecast.common_utils.date_utils import convert_timezone_dates
 
 from run_model_script import predict
 
-project_name_list = ['Ptolemaida', 'short_term_image']
+project_name_list = ['site_', 'short_term_image']
 
 def impute_missing_values(df):
     dates = pd.date_range(df.index[0], df.index[-1], freq='15min')

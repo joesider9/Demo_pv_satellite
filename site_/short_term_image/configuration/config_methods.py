@@ -4,21 +4,21 @@ import os
 
 import timm
 
-from Ptolemaida.short_term_image.configuration.config_utils import define_n_jobs
-from Ptolemaida.short_term_image.configuration.config_utils import find_pycharm_path
-from Ptolemaida.short_term_image.configuration.config_utils import define_enviroment
-from Ptolemaida.short_term_image.configuration.config_project import TYPE
-from Ptolemaida.short_term_image.configuration.config_project import HORIZON_TYPE
-from Ptolemaida.short_term_image.configuration.config_input_data import NWP_DATA_MERGE
-from Ptolemaida.short_term_image.configuration.config_input_data import DATA_COMPRESS
-from Ptolemaida.short_term_image.configuration.config_input_data import DATA_ROW_SCALE
-from Ptolemaida.short_term_image.configuration.config_input_data import DATA_NWP_SCALE
-from Ptolemaida.short_term_image.configuration.experiments import experiments
+from site_.short_term_image.configuration.config_utils import define_n_jobs
+from site_.short_term_image.configuration.config_utils import find_pycharm_path
+from site_.short_term_image.configuration.config_utils import define_enviroment
+from site_.short_term_image.configuration.config_project import TYPE
+from site_.short_term_image.configuration.config_project import HORIZON_TYPE
+from site_.short_term_image.configuration.config_input_data import NWP_DATA_MERGE
+from site_.short_term_image.configuration.config_input_data import DATA_COMPRESS
+from site_.short_term_image.configuration.config_input_data import DATA_ROW_SCALE
+from site_.short_term_image.configuration.config_input_data import DATA_NWP_SCALE
+from site_.short_term_image.configuration.experiments import experiments
 
 RUNTIME_BACKEND = 'TORCH'  # TF_2, TORCH
 
-from Ptolemaida.short_term_image.configuration.timm_model_list import timm_models
-from Ptolemaida.short_term_image.configuration.huggingface_vit_list import huggingface_models
+from site_.short_term_image.configuration.timm_model_list import timm_models
+from site_.short_term_image.configuration.huggingface_vit_list import huggingface_models
 
 vit_models = timm_models.union(huggingface_models)
 

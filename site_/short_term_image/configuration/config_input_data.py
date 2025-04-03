@@ -1,7 +1,7 @@
 import os
 import numpy as np
-from Ptolemaida.short_term_image.configuration.config_project import config_project
-from Ptolemaida.short_term_image.configuration.config_utils import *
+from site_.short_term_image.configuration.config_project import config_project
+from site_.short_term_image.configuration.config_utils import *
 
 static_data = config_project()
 path_owner = os.path.join(static_data['sys_folder'], static_data['project_owner'])
@@ -45,8 +45,8 @@ else:
     targ_lags = [0]
 targ_tag = 'Step' if ts_resolution == 0.25 else 'Hour'
 
-TARGET_VARIABLE = {'name': 'Ptolemaida',
-                   'source': 'Ptolemaida',
+TARGET_VARIABLE = {'name': 'site_',
+                   'source': 'site_',
                    'lags': targ_lags if HORIZON_TYPE == 'multi-output'else [0],
                    'columns': [f'{targ_tag}_{i}' for i in targ_lags]
                                                        if HORIZON_TYPE == 'multi-output'else ['target']}
